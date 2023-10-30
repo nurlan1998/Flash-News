@@ -1,0 +1,15 @@
+{
+  "btnBottomNav_global": "Глобальные",
+  "btnBottomNav_local": "Местные",
+  "btnBottomNav_favourite": "Избранные",
+  "btnBottomNav_settings": "Настройки",
+  "aboutApp_lastNews": "Последние новости",
+  "aboutApp_showWarning": "Язык меняется только для местных новостей",
+  "favorite_listEmpty": "Список пуст",
+  "favourite_removeNewsTitle": "Удалить новость",
+  "favourite_removeNewsDescription": "Вы уверены, что хотите удалить эту новость?",
+  "favourite_removeAllNewsTitle": "Вы хотите удалить все новости",
+  "favourite_removeAllNewsDescription": "Вы уверены, что хотите удалить все новости?",
+  "cancel": "Отмена",
+  "remove": "Удалить"
+}

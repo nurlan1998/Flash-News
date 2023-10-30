@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "356557421941",
+    "project_id": "news-app-cf92d",
+    "storage_bucket": "news-app-cf92d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356557421941:android:670874f113643aaa71e73c",
+        "android_client_info": {
+          "package_name": "com.nurlan.news_app_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJW0lyYNGh_CJ5FBHKeZ6KuJ1b6Py-1o4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+{
+  "btnBottomNav_global": "Халқаро",
+  "btnBottomNav_local": "Маҳаллий",
+  "btnBottomNav_favourite": "Севимлилар",
+  "btnBottomNav_settings": "Созламалар",
+  "aboutApp_lastNews": "Охирги янгиликлар",
+  "aboutApp_showWarning": "Тил фақат маҳаллий янгиликлар учун ўзгаради",
+  "favorite_listEmpty": "Рўйхат бўш",
+  "favourite_removeNewsTitle": "Янгиликларни ўчириш",
+  "favourite_removeNewsDescription": "Ушбу янгиликни ўчиришни хоҳлайсизми?",
+  "favourite_removeAllNewsTitle": "Барча янгиликларни ўчиришни хоҳлайсизми",
+  "favourite_removeAllNewsDescription": "Сиз барча янгиликларни ўчиришни хоҳлайсизми?",
+  "cancel": "Cancel",
+  "remove": "Remove"
+}
