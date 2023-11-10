@@ -5,14 +5,14 @@ This XML file does not appear to have any style information associated with it. 
         <title>UzNews - Новости Узбекистана</title>
         <description>Новостной сайт Узбекистана</description>
         <language>ru</language>
-        <yandex:logo>https://uznews.uz/upload/logo_rss_small.png</yandex:logo>
-        <yandex:logo type="square">https://uznews.uz/upload/logo_rss_large.png</yandex:logo>
+<!--        <yandex:logo>https://uznews.uz/upload/logo_rss_small.png</yandex:logo>-->
+<!--        <yandex:logo type="square">https://uznews.uz/upload/logo_rss_large.png</yandex:logo>-->
         <item>
             <guid>68895</guid>
             <link>https://uznews.uz/posts/68895/</link>
-            <title>Бизнес-тренер, обещавший научить зарабатывать в месяц $10 тыс., объявлен в розыск — видео</title>
+            <title>Бизнес-тренер, обещавший научить зарабатывать в месяц 10 тыс., объявлен в розыск — видео</title>
             <author>Uznews.uz</author>
-            <category id="35">Криминал</category>
+<!--            <category id="35">Криминал</category>-->
             <description>27-летний Ислом Иброхимов получил известность после публикации мотивационных видеороликов на YouTube.</description>
             <pubDate>Thu, 26 Oct 23 10:24:31 +0530</pubDate>
             <yandex:genre>article</yandex:genre>

@@ -12,5 +12,9 @@ void main() async {
   await SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    systemNavigationBarColor: Color(0xff0a0a0a),
+    systemNavigationBarIconBrightness: Brightness.light,
+  ));
   runApp(const App());
 }

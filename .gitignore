@@ -55,6 +55,8 @@ app.*.map.json
 
 /lib/firebase_options.dart
 
+.fvm/flutter_sdk
+
 # auto_route generated
 /lib/core/routing/router.gr.dart
 # More files

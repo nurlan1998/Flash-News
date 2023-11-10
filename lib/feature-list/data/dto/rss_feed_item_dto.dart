@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:equatable/equatable.dart';
 import 'package:hive/hive.dart';
 import 'package:news_app_flutter/core/data/app_helper.dart';
 import 'package:news_app_flutter/feature-list/domain/entities/rss_feed_item_entity.dart';
@@ -10,7 +11,7 @@ import 'rss_feed_enclosure_dto.dart';
 part 'rss_feed_item_dto.g.dart';
 
 @HiveType(typeId: 2)
-class RssFeedItemDto {
+class RssFeedItemDto extends Equatable {
   @HiveField(0)
   final String? title;
   @HiveField(1)
@@ -45,23 +46,6 @@ class RssFeedItemDto {
     this.id,
   });
 
-  factory RssFeedItemDto.fromJson(Map<String, dynamic> json) => RssFeedItemDto(
-        id: json['id'],
-        title: json["title"],
-        description: json["description"],
-        link: json["link"],
-        // categories: json["categories"] == null
-        //     ? null
-        //     : List<RssFeedCategoryDto>.from(
-        //         json["categories"].map((x) => RssFeedCategoryDto.fromJson(x))),
-        pubDate: json['pubDate'],
-        author: json['author'],
-        comments: json['comments'],
-        enclosure: json['enclosures'] != null
-            ? RssFeedEnclosureDto.fromJson(json['enclosures'])
-            : null,
-      );
-
   factory RssFeedItemDto.parse(XmlElement element) {
     return RssFeedItemDto(
       title: AppHelper.findElementOrNull(element, 'title')?.innerText,
@@ -93,6 +77,9 @@ class RssFeedItemDto {
       if (enclosure != null) 'enclosures': enclosure?.toMap(),
     };
   }
+
+  @override
+  List<Object?> get props => [title,description,link,enclosure,pubDate];
 }
 
 extension RssItemMapper on RssFeedItemDto {

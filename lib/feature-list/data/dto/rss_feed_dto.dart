@@ -62,15 +62,6 @@ class RssFeedDto extends Equatable {
     this.ttl = 0,
   });
 
-  factory RssFeedDto.fromJson(Map<String, dynamic> json) => RssFeedDto(
-        title: json["title"],
-        description: json["description"],
-        items: json["items"] == null
-            ? null
-            : List<RssFeedItemDto>.from(
-                json["items"].map((x) => RssFeedItemDto.fromJson(x))),
-      );
-
   Map<String, dynamic> toMap() {
     return {
       'items': FieldValue.arrayUnion(items!.map((i) => i.toMap()).toList()),

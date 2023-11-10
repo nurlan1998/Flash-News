@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:equatable/equatable.dart';
 import 'package:hive/hive.dart';
 import 'package:news_app_flutter/feature-list/domain/entities/rss_feed_enclosure_entity.dart';
 import 'package:xml/xml.dart';
@@ -6,7 +7,7 @@ import 'package:xml/xml.dart';
 part 'rss_feed_enclosure_dto.g.dart';
 
 @HiveType(typeId: 3)
-class RssFeedEnclosureDto {
+class RssFeedEnclosureDto extends Equatable {
   @HiveField(0)
   final String? url;
   @HiveField(1)
@@ -51,6 +52,9 @@ class RssFeedEnclosureDto {
       'type': type,
     };
   }
+
+  @override
+  List<Object?> get props => [url,type,length];
 }
 
 extension RssEnclosureMapper on RssFeedEnclosureDto {

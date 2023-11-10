@@ -25,11 +25,9 @@ class ThemeModeHelper {
   }
 
   static void _updateSystemNavigation([bool isDarkMode = false]) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      systemNavigationBarColor:
-      isDarkMode ? const Color(0xff0a0a0a) : Colors.white,
-      systemNavigationBarIconBrightness:
-      !isDarkMode ? Brightness.dark : Brightness.light,
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      systemNavigationBarColor: Color(0xff0a0a0a),
+      systemNavigationBarIconBrightness: Brightness.light,
     ));
   }
 
