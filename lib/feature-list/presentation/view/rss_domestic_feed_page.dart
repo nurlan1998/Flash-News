@@ -87,8 +87,6 @@ class _RssDomesticFeedPageState extends State<RssDomesticFeedPage>
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      //Image.asset('assets/traveler.png'),
-                      //const SizedBox(width: 8.0),
                       Text(
                         'Uznews',
                         style: TextStyle(fontSize: 16),
@@ -102,8 +100,6 @@ class _RssDomesticFeedPageState extends State<RssDomesticFeedPage>
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      //Image.asset('assets/school_bus.png'),
-                      //const SizedBox(width: 8.0),
                       Text(
                         'Gazeta.uz',
                         style: TextStyle(fontSize: 16),
@@ -117,8 +113,6 @@ class _RssDomesticFeedPageState extends State<RssDomesticFeedPage>
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      //Image.asset('assets/school_bus.png'),
-                      //const SizedBox(width: 8.0),
                       Text(
                         'Kun.uz',
                         style: TextStyle(fontSize: 16),

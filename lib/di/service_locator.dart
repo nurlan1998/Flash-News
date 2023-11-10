@@ -1,7 +1,6 @@
 import 'package:get_it/get_it.dart';
 import 'package:news_app_flutter/core/data/cache.dart';
 import 'package:news_app_flutter/core/data/http/api_client.dart';
-import 'package:news_app_flutter/core/data/http/rss_client.dart';
 import 'package:news_app_flutter/core/routing/router.gr.dart';
 import 'package:news_app_flutter/feature-list/data/datasources/news_list_local_data_source.dart';
 import 'package:news_app_flutter/feature-list/data/datasources/news_list_remote_data_source.dart';
@@ -15,7 +14,6 @@ final getIt = GetIt.instance;
 class ServiceLocator {
   static Future<void> setup() async {
     getIt.registerSingleton<ApiClient>(ApiClient.instance());
-    getIt.registerSingleton<RssClient>(RssClient.instance());
     getIt.registerSingleton<Cache>(await Cache.initialize());
     getIt.registerSingleton<AutoRouter>(AutoRouter());
 

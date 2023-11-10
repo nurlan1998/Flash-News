@@ -120,8 +120,6 @@ class BottomNavigation extends StatelessWidget {
     return BottomNavigationBar(
       useLegacyColorScheme: true,
       type: BottomNavigationBarType.fixed,
-      //unselectedItemColor: Colors.grey[600],
-      //selectedItemColor: AppColors.primary,
       showUnselectedLabels: true,
       onTap: (int index) {
         onTabPressed!(index);

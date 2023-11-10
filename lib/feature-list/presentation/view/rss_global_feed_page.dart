@@ -1,12 +1,10 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:news_app_flutter/core/presentation/widgets/page_error.dart';
 import 'package:news_app_flutter/core/presentation/widgets/page_loading.dart';
-import 'package:news_app_flutter/core/presentation/widgets/theme_mode_switcher.dart';
 import 'package:news_app_flutter/core/routing/router.gr.dart';
 import 'package:news_app_flutter/feature-list/presentation/bloc/rss/rss_bloc.dart';
 import 'package:news_app_flutter/feature-list/presentation/bloc/rss/rss_event.dart';
@@ -35,7 +33,7 @@ class _RssGlobalFeedPageState extends State<RssGlobalFeedPage> {
   }
 
   void loadData() {
-    BlocProvider.of<RssBloc>(context).add(GetRss(url: 'https://lenta.ru/rss'));
+    BlocProvider.of<RssBloc>(context).add(const GetRss(url: 'https://lenta.ru/rss'));
   }
 
   @override

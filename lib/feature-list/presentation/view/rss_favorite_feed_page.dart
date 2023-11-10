@@ -1,11 +1,9 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:news_app_flutter/core/data/cache.dart';
-import 'package:news_app_flutter/core/data/theme/theme_mode_helper.dart';
 import 'package:news_app_flutter/core/presentation/helpers/app_colors.dart';
 import 'package:news_app_flutter/core/routing/router.gr.dart';
 import 'package:news_app_flutter/di/service_locator.dart';

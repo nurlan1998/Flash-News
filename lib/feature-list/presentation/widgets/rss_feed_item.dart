@@ -1,12 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
-import 'package:news_app_flutter/core/data/app/application.dart';
-import 'package:news_app_flutter/core/data/cache.dart';
-import 'package:news_app_flutter/di/service_locator.dart';
 import 'package:news_app_flutter/feature-list/domain/entities/rss_feed_enclosure_entity.dart';
 import 'package:news_app_flutter/feature-list/domain/entities/rss_feed_item_entity.dart';
-import 'package:intl/intl.dart';
 
 class RssFeedItem extends StatelessWidget {
   final RssFeedItemEntity rssItemEntity;
@@ -44,13 +39,6 @@ class RssFeedItem extends StatelessWidget {
       height: rssEnclosureEntity?.url != null ? 200 : 70,
       child: Stack(
         children: [
-          // Align(
-          //   alignment: Alignment.topRight,
-          //   child: Padding(
-          //     padding: const EdgeInsets.all(8.0),
-          //     child: Image.network('https://lenta.ru/images/small_logo.png',width: 50,height: 50,),
-          //   ),
-          // ),
           Align(
               alignment: Alignment.bottomCenter,
               child: Container(
